@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli - To Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="main-title">To do list</h1>
+
+        <div class="todo-app">
+            
+            <div class="top-row">
+                <div class="date-block">
+                    <p class="day-name" id="day-name"></p> <div class="day-number">
+                        <span id="day-num"></span> </div>
+                    <p class="month-name" id="month-name"></p> </div>
+                 <div class="progression-block">
+                    <h3>Progression</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="input-box" placeholder="Write your task here...">
+                <button onclick="addTask()" class="add-btn">+</button>
+            </div>
+
+            <div class="list-section">
+                <ul id="list-container">
+                    
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <button class="finish-btn" onclick="finishDay()">FINISH DAY</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("img/fdc_gris.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px rgba(0,0,0,0.1);
+}
+
+
+
+.top-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.date-block {
+    background: #FAF9F6;
+    padding: 15px;
+    border-radius: 20px;
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.day-name, .month-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: black;
+}
+
+.day-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: #D3D3D3;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 5px auto;
+    color: black;
+}
+
+.progression-block {
+    background: #FAF9F6;
+    padding: 20px;
+    border-radius: 20px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    background: #D3D3D3;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%; 
+    height: 100%;
+    background: #A9A9A9;
+    border-radius: 10px;
+    transition: width 0.5s ease; 
+}
+
+
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FAF9F6;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.input-section input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.add-btn {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-image: url(img/ponyo.jpg);
+    background-size: cover;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+
+
+/* --- SECTION BASSE : LE BLOCK D'AFFICHAGE --- */
+.list-section {
+    background: #FAF9F6;
+    border-radius: 25px;
+    padding: 25px;
+    min-height: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+#list-container li {
+    list-style: none;
+    font-size: 1.1rem;
+    padding: 12px 40px 12px 45px;
+    color: var(--text-dark);
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+#list-container li::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url("img/flamme.png");
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 8px;
+}
+
+#list-container li.checked {
+    color: #a0a0a0;
+    text-decoration: line-through;
+}
+
+#list-container li.checked::before {
+    filter: grayscale(1) opacity(0.5);
+}
+
+/* Le bouton X pour supprimer */
+#list-container li span {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ccc;
+}
+
+#list-container li span:hover {
+    background: #eee;
+    color: #ff5e5e;
+}
+
+
+.finish-btn {
+    background: #FAF9F6;
+    border: 3px solid #C0C0C0;
+    color: #C0C0C0;
+    padding: 15px 40px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.finish-btn:hover {
+    background: #C0C0C0;
+    color: white;
+}
