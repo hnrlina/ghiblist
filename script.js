@@ -85,3 +85,9 @@ function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
     updateProgress();
 }
+
+// Lancement au démarrage
+updateDate();
+showTask();
+
+
