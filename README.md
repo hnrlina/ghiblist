@@ -28,7 +28,7 @@ This project allows you to add, complete, and remove tasks, and keeps track of y
 
 ## Preview
 
-![Ghibli To Do List Preview](#)
+![Ghibli To Do List Preview](./img/PreviewToDo.png)
 
 ---
 
